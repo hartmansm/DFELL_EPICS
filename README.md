@@ -4,7 +4,12 @@ EPICS device support originally developed for Duke Free Electron
 Laser Laboratory. The software is not being actively developed but
 is still being used by multiple facilities.
 
-
+Most of these modules were originally written for EPICS 3.13. They
+have been updated to also work with 3.14. However, they are still
+using VxWorks specific code. They do not take advantage of the EPICS
+OSI layer available in 3.14. They can currently be used with EPICS
+3.13 or 3.14 (VxWorks only) but should be updated to work with newer
+releases and on different operating systems.
 
 ## EPICS BiRa 7305 VSAM Support Module (ai)
 
