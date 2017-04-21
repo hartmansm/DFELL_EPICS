@@ -6,7 +6,9 @@ The base address used by this driver for card 0 is 0x4000 in A16
 (address for card as shipped). To change this, follow the iseg VHS
 manual instructions for reprogramming the EEPROM and define
 iseg_vhs_base in st.cmd to match. Card 1 should be set to an address
-of 0x4400 (base + 1024 bytes) ## Functions Supported
+of 0x4400 (base + 1024 bytes) 
+
+## Functions Supported
 
 The following functions of the VHS are supported:
  * enable/disable HV for an individual channel (bo)
