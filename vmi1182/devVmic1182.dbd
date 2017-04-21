@@ -1,0 +1,3 @@
+# VMIVME-1182
+driver(drvVmi1182)
+device(bi, VME_IO, devBiVmi1182, "VMIVME-1182")

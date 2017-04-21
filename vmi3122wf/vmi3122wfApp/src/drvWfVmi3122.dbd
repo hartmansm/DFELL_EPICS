@@ -1,0 +1,3 @@
+driver(drvVmi3122)
+device(waveform, VME_IO, devWfVmi3122, "VMIVME-3122-Wf")
+device(bo, VME_IO, devBoVmi3122, "VMIVME-3122")

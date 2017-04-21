@@ -1,0 +1,3 @@
+driver(drvHighlandV85x)
+device(ao, VME_IO, devAoHighlandV85x, "DDG 85x delay")
+device(bo, VME_IO, devBoHighlandV85x, "DDG 85x disable")

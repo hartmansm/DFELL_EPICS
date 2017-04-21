@@ -1,0 +1,3 @@
+# Hytec-2670
+driver(drvHy2670)
+device(ao, VME_IO, devAoHy2670, "Hytec VDD2670")

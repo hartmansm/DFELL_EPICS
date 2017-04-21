@@ -1,0 +1,176 @@
+record(mbbo,"test:vdacm:clock") {
+	field(DTYP,"VDACM clock")
+	field(OUT,"#C0 S0 @")
+	field(ZRVL,"0")
+	field(ONVL,"1")
+	field(TWVL,"2")
+	field(THVL,"3")
+	field(FRVL,"4")
+	field(FVVL,"5")
+	field(SXVL,"6")
+	field(SVVL,"7")
+	field(EIVL,"8")
+	field(NIVL,"9")
+	field(TEVL,"10")
+	field(ELVL,"11")
+	field(TVVL,"12")
+	field(TTVL,"13")
+	field(FTVL,"14")
+	field(FFVL,"15")
+	field(ZRST,"100kHz")
+	field(ONST,"50kHz")
+	field(TWST,"25kHz")
+	field(THST,"12.5kHz")
+	field(FRST,"6.25kHz")
+	field(FVST,"3.125kHz")
+	field(SXST,"1.5625kHz")
+	field(SVST,"0.78125kHz")
+	field(EIST,"ExtClock/1")
+	field(NIST,"ExtClock/2")
+	field(TEST,"ExtClock/4")
+	field(ELST,"ExtClock/8")
+	field(TVST,"ExtClock/16")
+	field(TTST,"ExtClock/32")
+	field(FTST,"ExtClock/64")
+	field(FFST,"ExtClock/128")
+}
+record(ao,"test:vdacm:length") {
+	field(DTYP,"VDACM configure")
+	field(PINI,"YES")
+	field(OUT,"#C0 S0 @L")
+	field(DRVH,"32767")
+}
+record(ao,"test:vdacm:start") {
+	field(DTYP,"VDACM configure")
+	field(PINI,"YES")
+	field(OUT,"#C0 S0 @S")
+	field(DRVH,"32767")
+}
+record(event,"test:vdacm:sync") {
+	field(DTYP,"VDACM sync")
+	field(SCAN,"I/O Intr")
+	field(INP,"#C0 S0 @")
+	field(VAL,"1")
+}
+record(calc,"test:vdacm:counter") {
+	field(SCAN,"Event")
+	field(EVNT,"1")
+	field(CALC,"A+1")
+	field(INPA,"test:vdacm:counter") 
+}
+record(bi,"test:vdacm:active") {
+	field(DTYP,"VDACM active")
+	field(SCAN,".1 second")
+	field(INP,"#C0 S0 @")
+	field(ZNAM,"Not Active")
+	field(ONAM,"Active")
+}
+record(bo,"test:vdacm:trigger") {
+	field(DTYP,"VDACM trigger")
+	field(OUT,"#C0 S0 @")
+	field(ZNAM,"Stop")
+	field(ONAM,"Trigger")
+}
+record(waveform,"test:vdacm:0:write") {
+	field(DTYP,"VDACM write waveform")
+	field(INP,"#C0 S0 @")
+	field(NELM,"128")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:1:write") {
+	field(DTYP,"VDACM write waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S1 @")
+	field(NELM,"128")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:2:write") {
+	field(DTYP,"VDACM write waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S2 @")
+	field(NELM,"128")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:3:write") {
+	field(DTYP,"VDACM write waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S3 @")
+	field(NELM,"128")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:4:write") {
+	field(DTYP,"VDACM write waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S4 @")
+	field(NELM,"128")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:5:write") {
+	field(DTYP,"VDACM write waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S5 @")
+	field(NELM,"128")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:6:write") {
+	field(DTYP,"VDACM write waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S6 @")
+	field(NELM,"128")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:0:read") {
+	field(DTYP,"VDACM read waveform")
+	field(INP,"#C0 S0 @64")
+	field(NELM,"64")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:1:read") {
+	field(DTYP,"VDACM read waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S1 @64")
+	field(NELM,"64")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:2:read") {
+	field(DTYP,"VDACM read waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S2 @64")
+	field(NELM,"64")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:3:read") {
+	field(DTYP,"VDACM read waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S3 @64")
+	field(NELM,"64")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:4:read") {
+	field(DTYP,"VDACM read waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S4 @64")
+	field(NELM,"64")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:5:read") {
+	field(DTYP,"VDACM read waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S5 @64")
+	field(NELM,"64")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:6:read") {
+	field(DTYP,"VDACM read waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S6 @64")
+	field(NELM,"64")
+	field(FTVL,"SHORT")
+}
+record(waveform,"test:vdacm:7:read") {
+	field(DTYP,"VDACM read waveform")
+	field(PINI,"YES")
+	field(INP,"#C0 S7 @64")
+	field(NELM,"64")
+	field(FTVL,"SHORT")
+}

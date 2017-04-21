@@ -1,0 +1,3 @@
+# VMIVME-3113A
+driver(drvVmi3113A)
+device(ai, VME_IO, devAiVmi3113A, "VMIVME-3113A")

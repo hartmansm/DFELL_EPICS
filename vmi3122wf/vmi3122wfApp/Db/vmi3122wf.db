@@ -1,0 +1,14 @@
+record(bo,"test:3122:trigger") {
+	field(DTYP,"VMIVME-3122")
+	field(OUT,"#C0 S0 @")
+}
+record(waveform,"test:3122:wf") {
+	field(SCAN,"I/O Intr")
+	field(PINI,"YES")
+	field(DTYP,"VMIVME-3122-Wf")
+	field(INP,"#C0 S0 @")
+	field(EGU,"bits")
+	field(HOPR,"65535")
+	field(NELM,"1024")
+	field(FTVL,"ULONG")
+}

@@ -1,0 +1,3 @@
+# VMIVME-4116
+driver(drvVmi4116)
+device(ao, VME_IO, devAoVmi4116, "VMIVME-4116")

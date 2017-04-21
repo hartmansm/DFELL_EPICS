@@ -1,0 +1,4 @@
+driver(drvIsegVHS)
+device(bo, VME_IO, devBoIsegVHS, "Iseg-VHS")
+device(ao, VME_IO, devAoIsegVHS, "Iseg-VHS")
+device(ai, VME_IO, devAiIsegVHS, "Iseg-VHS")

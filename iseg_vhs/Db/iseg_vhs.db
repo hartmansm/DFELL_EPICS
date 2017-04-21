@@ -1,0 +1,49 @@
+record(ai,"isegvhs:$(CARD):$(CHAN):volt:read") {
+	field(SCAN,"1 second")
+	field(DTYP,"Iseg-VHS")
+	field(INP,"#C$(CARD) S$(CHAN) @v")
+	field(PREC,"2")
+	field(EGU,"Volts")
+}
+record(ai,"isegvhs:$(CARD):$(CHAN):curr:read") {
+	field(SCAN,"1 second")
+	field(DTYP,"Iseg-VHS")
+	field(INP,"#C$(CARD) S$(CHAN) @i")
+	field(PREC,"5")
+	field(EGU,"Amps")
+}
+record(ao,"isegvhs:$(CARD):$(CHAN):volt:set") {
+	field(PINI,"YES")
+	field(DTYP,"Iseg-VHS")
+	field(OUT,"#C$(CARD) S$(CHAN) @v")
+	field(PREC,"2")
+	field(DRVH,"2000")
+	field(HOPR,"2000")
+	field(EGU,"Volts")
+}
+record(ao,"isegvhs:$(CARD):$(CHAN):curr:set") {
+	field(PINI,"YES")
+	field(DTYP,"Iseg-VHS")
+	field(OUT,"#C$(CARD) S$(CHAN) @i")
+	field(PREC,"5")
+	field(DRVH,"4e-3")
+	field(HOPR,"4e-3")
+	field(EGU,"Amps")
+}
+record(ao,"isegvhs:$(CARD):ramp:set") {
+	field(PINI,"YES")
+	field(DTYP,"Iseg-VHS")
+	field(OUT,"#C$(CARD) S0 @s")
+	field(PREC,"2")
+	field(DRVH,"20")
+	field(HOPR,"20")
+	field(EGU,"%")
+	field(VAL,"20")
+}
+record(bo,"isegvhs:$(CARD):$(CHAN):on:bo") {
+	field(PINI,"YES")
+	field(DTYP,"Iseg-VHS")
+	field(OUT,"#C$(CARD) S$(CHAN) @")
+	field(ZNAM,"Off")
+	field(ONAM,"On")
+}

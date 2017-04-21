@@ -1,0 +1,3 @@
+# VMIVME-2120
+driver(drvVmi2120)
+device(bo, VME_IO, devBoVmi2120, "VMIVME-2120")

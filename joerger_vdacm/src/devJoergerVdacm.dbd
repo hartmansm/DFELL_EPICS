@@ -1,0 +1,10 @@
+# Joerger VDACM waveform generator
+driver(drvJoergerVdacm)
+device(waveform, VME_IO, devWoVdacm, "VDACM write waveform")
+device(waveform, VME_IO, devWfVdacm, "VDACM read waveform")
+device(ao, VME_IO, devAoVdacm, "VDACM DAC")
+device(ao, VME_IO, devAoConfigVdacm, "VDACM configure")
+device(mbbo, VME_IO, devMbboVdacm, "VDACM clock")
+device(bo, VME_IO, devBoVdacm, "VDACM trigger")
+device(bi, VME_IO, devBiVdacm, "VDACM active")
+device(event, VME_IO, devEventVdacm, "VDACM sync")

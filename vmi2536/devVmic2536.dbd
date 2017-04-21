@@ -1,0 +1,3 @@
+driver(drvVmi2536)
+device(bi, VME_IO, devBiVmi2536, "VMIVME-2536")
+device(bo, VME_IO, devBoVmi2536, "VMIVME-2536")
