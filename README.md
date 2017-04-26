@@ -11,36 +11,11 @@ OSI layer available in 3.14. They can currently be used with EPICS
 3.13 or 3.14 (VxWorks only) but should be updated to work with newer
 releases and on different operating systems.
 
-## Hardware Supported
+## Hardware Supported (VME)
 
 ### BiRa 7305 VSAM Support Module (ai)
 
 * BiRa Systems -- 7305 VSAM 32 Channel, Smart Analog Monitor (ai)
-
-### CAMAC Device Support Routines
-
- * DSP -- 3016 DAC
-16 channel, 16-bit CAMAC digital to analog converter module.
- * DSP -- 2032 ADC
-32 channel Scanning Digital Voltmeter (equivalent to 5305 SAM).
- * BiRa -- 5305 SAM
-CAMAC module with 32 differential channels of slow analog to digital conversion with automatic ranging, polarity and calibration.
- * -- E100 Binary Input
-CAMAC module with 32 channels.
- * BiRa -- 2324 Binary Input
-CAMAC module with dual 24-bit parallel input register.
- * BiRa -- 3224 Binary Output
-CAMAC module with dual 24-bit digital output register.
- * BINP -- D0609 ADC
-20-bit CAMAC integrating digital voltmeter.
- * BINP -- D0612 ADC
-20-bit CAMAC integrating digital voltmeter.
- * BINP -- D0612 ADC with A0604 MUX
-20-bit CAMAC integrating digital voltmeter, with A0604 16-channel thermocompensated analog multiplexer.
- * BINP -- D0643 DAC
-1 channel, 20-bit CAMAC digital to analog converter.
- * BINP -- USD-2
-CAMAC Stepper Motor Driver
 
 ### Highland Technology V850/V851 Digital Delay Generator Module
 
@@ -75,9 +50,13 @@ CAMAC Stepper Motor Driver
 
  * VMIC -- VMIVME-3113A Scanning 12-bit Analog-to-Digital Converter Board (ai)
 
-### VMIVME-3122 ADC Module (waveform)
+### VMIVME-3122 ADC Module (ai, waveform)
 
- * VMIC -- VMIVME-3122 VMIVME-3122 high performance 16-bit ADC, 100kHz, 1024 samples (waveform)
+ * VMIC -- VMIVME-3122 VMIVME-3122 high performance 16-bit , 64 channel ADC, 100kHz, 1024 samples
+ Three implementations are included here: 
+   * vmi3122 (preferred) as a 64 channel ADC
+   * vmic3122aiavg as a 64 channel ADC with built-in sample averaging
+   * vmic3122wf as a transient digitizer
 
 ### VMIVME-4116 DAC Module (ao)
 
@@ -86,4 +65,34 @@ CAMAC Stepper Motor Driver
 ### VMIVME-4132 DAC Module (ao)
 
  * VMIC -- VMIVME-4132 32 Channel, 12-Bit Analog Output Board (ao)
+ 
+## Hardware Supported (CAMAC)
+
+ ### CAMAC Device Support Routines 
+
+(Requires camacLib)
+
+ * DSP -- 3016 DAC
+16 channel, 16-bit CAMAC digital to analog converter module.
+ * DSP -- 2032 ADC
+32 channel Scanning Digital Voltmeter (equivalent to 5305 SAM).
+ * BiRa -- 5305 SAM
+CAMAC module with 32 differential channels of slow analog to digital conversion with automatic ranging, polarity and calibration.
+ * -- E100 Binary Input
+CAMAC module with 32 channels.
+ * BiRa -- 2324 Binary Input
+CAMAC module with dual 24-bit parallel input register.
+ * BiRa -- 3224 Binary Output
+CAMAC module with dual 24-bit digital output register.
+ * BINP -- D0609 ADC
+20-bit CAMAC integrating digital voltmeter.
+ * BINP -- D0612 ADC
+20-bit CAMAC integrating digital voltmeter.
+ * BINP -- D0612 ADC with A0604 MUX
+20-bit CAMAC integrating digital voltmeter, with A0604 16-channel thermocompensated analog multiplexer.
+ * BINP -- D0643 DAC
+1 channel, 20-bit CAMAC digital to analog converter.
+ * BINP -- USD-2
+CAMAC Stepper Motor Driver
+
 
