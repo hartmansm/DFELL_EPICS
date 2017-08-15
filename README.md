@@ -78,7 +78,7 @@ releases and on different operating systems.
 32 channel Scanning Digital Voltmeter (equivalent to 5305 SAM).
  * BiRa -- 5305 SAM
 CAMAC module with 32 differential channels of slow analog to digital conversion with automatic ranging, polarity and calibration.
- * -- E100 Binary Input
+ * DSP --  E100 Binary Input
 CAMAC module with 32 channels.
  * BiRa -- 2324 Binary Input
 CAMAC module with dual 24-bit parallel input register.
