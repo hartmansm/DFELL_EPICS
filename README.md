@@ -1,8 +1,11 @@
 # DFELL_EPICS
 
+This repository containts
 EPICS device support originally developed for Duke Free Electron
 Laser Laboratory. The software is not being actively developed but
-is still being used by multiple facilities.
+is still being used by multiple facilities. These software modules
+were originally hosted at http://www.fel.duke.edu/epics/ and were 
+moved here as-is when that web server was taken offline. 
 
 Most of these modules were originally written for EPICS 3.13. They
 have been updated to also work with 3.14. However, they are still
